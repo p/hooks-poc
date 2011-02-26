@@ -3,5 +3,9 @@ Alternative hooks implementation proof of concept.
 See http://area51.phpbb.com/phpBB/viewtopic.php?f=84&t=32805
 for the discussion.
 
+To run:
+
+$ php driver.php
+
 Please note that this repository is licensed under Expat/MIT license
 (see LICENSE file).
