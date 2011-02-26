@@ -8,6 +8,9 @@ function hook_invoke($hook_name, &$arg) {
 function build_hook_dispatcher() {
   global $mod_infos;
   
+  echo "Mod info map:\n";
+  var_dump($mod_infos);
+  
   $ordered = array();
   $levels = array();
   
