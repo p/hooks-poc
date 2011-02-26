@@ -5,5 +5,5 @@ $mod_infos['foo'] = array(
   // replace means lower-priority hooks will not be called
   'useful' => array('priority' => 100, 'replace' => true),
   // This will fail:
-  //'useful' => 1,
+  //'useful' => array('priority' => 1, 'replace' => true),
 );

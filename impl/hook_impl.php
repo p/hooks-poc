@@ -18,7 +18,7 @@ function build_hook_dispatcher() {
         $ordered[$hook] = array();
       }
       if (isset($ordered[$hook][$priority])) {
-        die("duplicate priority $priority for hook $hook (guilty mod $mod, previous mod {$ordered[$hook][$priority]})");
+        die("duplicate priority $priority for hook $hook (guilty mod $mod, previous mod {$ordered[$hook][$priority][0]})");
       }
       $ordered[$hook][$priority] = array($mod, $options);
       $levels[$priority] = true;
