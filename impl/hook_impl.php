@@ -64,7 +64,11 @@ function build_hook_dispatcher() {
   echo "Generated dispatcher hierarchy:\n";
   echo $text;
   
+  // This eval call is supposed to be performed during mod installation,
+  // with results saved into cache. In normal operation the cache file
+  // would be included instead of running all preceding code in this function.
   eval($text);
+  
   global $hook_dispatcher;
   $hook_dispatcher = new hook_dispatcher;
 }
