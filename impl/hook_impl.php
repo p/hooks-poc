@@ -1,7 +1,5 @@
 <?php
 
-// Note: for performance reasons consider benchmarking building an array
-// vs variable argument calls
 function hook_invoke($hook_name, &$arg) {
   global $hook_dispatcher;
   return $hook_dispatcher->$hook_name($arg);
